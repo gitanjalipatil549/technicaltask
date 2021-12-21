@@ -10,7 +10,7 @@ resource "google_compute_firewall" "appsbroker-firewall-ssh" {
   }
 
   target_tags   = ["appsbrokerfirewallssh"]
-  source_ranges = ["0.0.0.0/0"]
+  source_ranges = ["10.0.0.0/16"]
 }
 
 resource "google_compute_firewall" "appsbroker-firewall-http" {
